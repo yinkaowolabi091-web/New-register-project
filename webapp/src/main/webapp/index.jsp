@@ -1,37 +1,59 @@
-<form action="action_page.php">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Virtual TechBox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      background-color: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    h1 {
+      color: #FFD700;
+    }
+    .btn {
+      background-color: #FFD700;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #FFA500;
+    }
+  </style>
+</head>
+<body>
   <div class="container">
-    <h1>New user Register for DevOps Learning at Virtual TechBox Youtube Channel</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-     
-    <label for="Name"><b>Enter Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <br>
+    <h1>🚀 Welcome to DevOps Learning Hub 🚀</h1>
+    <p>Virtual TechBox YouTube Channel brings you the coolest DevOps tutorials.</p>
     
-    <label for="mobile"><b>Enter mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <br>
-
-    <label for="email"><b>Enter Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <br>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <br>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <%
+      java.util.Date date = new java.util.Date();
+      String username = request.getParameter("Name");
+      if(username == null || username.isEmpty()){
+          username = "Guest";
+      }
+    %>
+    
+    <h2>Hello, <%= username %>! 👋</h2>
+    <p>Today is <%= date.toString() %></p>
+    
+    <button class="btn" onclick="alert('Keep learning, keep growing! 🚀')">Click Me</button>
+    
     <hr>
-    <br>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
+    <p>Already part of the community? <a href="login.jsp" style="color:#FFD700;">Sign in here</a>.</p>
   </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-
-   <h1> Thank You, Happy Learning </h1>
-   <h1> See You Again </h1>
-  
-</form>
+</body>
+</html>
