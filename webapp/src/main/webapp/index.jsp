@@ -36,7 +36,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>🚀 Welcome to DevOps Learning Hub 🚀</h1>
+    <h1>🚀 Welcome to Whykays devops Learning Hub 🚀</h1>
     <p>Virtual TechBox YouTube Channel brings you the coolest DevOps tutorials.</p>
     
     <%
