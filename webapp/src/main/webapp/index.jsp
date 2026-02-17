@@ -36,8 +36,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>🚀 Welcome to Whykays devops Learning Hub 🚀</h1>
-    <p>Virtual TechBox YouTube Channel brings you the coolest DevOps tutorials.</p>
+    <h1>🚀 Welcome to Whykays whyme always me Learning Hub 🚀</h1>
+    <p>Ykay os the best out there.</p>
     
     <%
       java.util.Date date = new java.util.Date();
