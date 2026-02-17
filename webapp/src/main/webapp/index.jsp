@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to Virtual TechBox</title>
+  <title>Welcome to Whykay hub</title>
   <style>
     body {
       font-family: Arial, sans-serif;
